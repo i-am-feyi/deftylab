@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Outfit } from "next/font/google";
-import localFont from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
