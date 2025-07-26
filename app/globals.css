@@ -1,7 +1,23 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@font-face {
+  font-family: Satoshi;
+  src: url("../fonts/Satoshi-Variable.ttf");
+  font-weight: bolder;
+}
+@font-face {
+  font-family: Satoshi;
+  src: url("../fonts/Satoshi-BlackItalic.woff");
+  font-weight: 800;
+  font-style: italic;
+}
+
 @custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-satoshi: Satoshi, "sans-serif";
+}
 
 @theme inline {
   --color-background: var(--background);
