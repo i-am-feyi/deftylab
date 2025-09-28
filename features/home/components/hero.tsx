@@ -9,7 +9,7 @@ const HeroSection = () => {
         <Navbar />
         <div className="flex flex-col gap-6 text-center mt-8 lg:mt-24">
           <h1 className="lg:max-w-4xl xl:max-w-5xl mx-auto px-3 font-black text-[2.57rem] lg:text-5xl xl:text-6xl mt-6 md:mt-12 leading-[110%] md:leading-[125%] xl:leading-[120%]">
-            <span className="text-[1.5rem] md:text-3xl">Remodelling Contractors:</span>
+            <span className="text-[1.5rem] md:text-3xl">Remodeling Contractors:</span>
             <br />
             Book an Extra <span className="text-[#6631A1]">2-3 Remodeling Jobs</span>{" "}
             using our <span className="text-[#6631A1]">RemodelerAI Growth Engine!</span>
