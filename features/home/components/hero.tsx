@@ -1,8 +1,13 @@
+"use client";
+
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
+import { useModalStore } from "@/store/use-modal-store";
 import React from "react";
 
 const HeroSection = () => {
+  const { open } = useModalStore();
+
   return (
     <section>
       <div className="container mx-auto mt-4">
@@ -19,7 +24,7 @@ const HeroSection = () => {
             RemodelerAI Growth Engine that works for you while you work!
           </p>
           <div>
-            <Button size="xl" variant="gradient" className="mt-10">
+            <Button size="xl" variant="gradient" className="mt-10" onClick={open}>
               <p className="text-wrap">Scale Your Business Today!</p>
             </Button>
           </div>

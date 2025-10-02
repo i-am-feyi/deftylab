@@ -1,7 +1,11 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import { useModalStore } from "@/store/use-modal-store";
 import React from "react";
 
 const Testimonial = () => {
+  const { open } = useModalStore();
   return (
     <section className="mt-28 lg:mt-60" id="testimonial">
       <div className="container mx-auto">
@@ -9,7 +13,7 @@ const Testimonial = () => {
           <p className="max-w-2xl mx-auto font-bold text-4xl md:text-6xl">
             Ready to Add $250k+ In Revenue This Year?
           </p>
-          <Button variant="gradient" size="xl" className="mt-6">
+          <Button variant="gradient" size="xl" className="mt-6" onClick={open}>
             Book a Consultation
           </Button>
         </div>

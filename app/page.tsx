@@ -1,3 +1,4 @@
+import BookCallModal from "@/components/book-call-modal";
 import Footer from "@/components/footer";
 import CTA from "@/features/home/components/cta";
 import HeroSection from "@/features/home/components/hero";

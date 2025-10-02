@@ -1,7 +1,11 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import { useModalStore } from "@/store/use-modal-store";
 import React from "react";
 
 const CTA = () => {
+  const { open } = useModalStore();
   return (
     <>
       <section className="mt-28 lg:mt-60">
@@ -15,7 +19,7 @@ const CTA = () => {
               Join the wave of AI that's helped hundreds of businesses make and save
               $100k+ per year using proven AI systems.
             </p>
-            <Button variant="gradient" size="xl" className="mt-10">
+            <Button variant="gradient" size="xl" className="mt-10" onClick={open}>
               Book a Consultation
             </Button>
           </div>
@@ -42,7 +46,7 @@ const CTA = () => {
             <h2 className="max-w-[45rem] mx-auto font-bold text-3xl sm:text-4xl md:text-5xl">
               Our Solution
             </h2>
-            <p className="max-w-4xl mx-auto text-xl mt-3 sm:text-2xl md:text-2xl">
+            <div className="max-w-4xl mx-auto text-xl mt-3 sm:text-2xl md:text-2xl">
               <ul className="flex flex-col gap-3">
                 <li>
                   ✅ One System That Generates Leads, Books Jobs, and Builds Your
@@ -53,7 +57,7 @@ const CTA = () => {
                   ✅ The Proven AI Growth Engine That Pays for Itself With Just One Job.
                 </li>
               </ul>
-            </p>
+            </div>
           </div>
         </div>
       </section>
